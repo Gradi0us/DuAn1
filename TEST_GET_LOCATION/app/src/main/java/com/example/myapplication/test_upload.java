@@ -12,4 +12,6 @@ public class test_upload extends AppCompatActivity {
         setContentView(R.layout.activity_test_upload);
     }
     //haohaosasasas
+    //dsdsds
+    //duchieuduc
 }
