@@ -1,0 +1,26 @@
+package com.example.myapplication;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.webkit.WebView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Map extends AppCompatActivity {
+
+    WebView webView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_map);
+
+        Intent intent = getIntent();
+        String url = intent.getStringExtra("url");
+
+        webView = findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl(url);
+
+    }
+}
