@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //acccccccccccccccccccccccccccccc
     //abcgchgccgg
+    //ádjasjdajdajsdnajsd
     public void Map(View view) {
         Intent intent = new Intent(MainActivity.this,Map.class);
         intent.putExtra("url","http://www.google.com/maps/search/?api=1&query=37.4219983%2C-122.084");
